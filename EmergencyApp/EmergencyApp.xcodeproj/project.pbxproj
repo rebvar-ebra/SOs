@@ -24,6 +24,7 @@
 		6C238B1728660D8F0082A503 /* GeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C238B1528660D8F0082A503 /* GeoLocation.swift */; };
 		6C238B1828660D8F0082A503 /* PoliceStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C238B1628660D8F0082A503 /* PoliceStation.swift */; };
 		6C238B3A2866138D0082A503 /* PoliceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C238B392866138D0082A503 /* PoliceLoader.swift */; };
+		6C238B3C28672C4B0082A503 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C238B3B28672C4A0082A503 /* SettingViewController.swift */; };
 		6CA8B51628638AF400F6700C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA8B51528638AF400F6700C /* AppDelegate.swift */; };
 		6CA8B51828638AF400F6700C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA8B51728638AF400F6700C /* SceneDelegate.swift */; };
 		6CA8B51A28638AF400F6700C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA8B51928638AF400F6700C /* ViewController.swift */; };
@@ -63,6 +64,7 @@
 		6C238B1528660D8F0082A503 /* GeoLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoLocation.swift; sourceTree = "<group>"; };
 		6C238B1628660D8F0082A503 /* PoliceStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliceStation.swift; sourceTree = "<group>"; };
 		6C238B392866138D0082A503 /* PoliceLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliceLoader.swift; sourceTree = "<group>"; };
+		6C238B3B28672C4A0082A503 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		6CA8B51228638AF400F6700C /* EmergencyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA8B51528638AF400F6700C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CA8B51728638AF400F6700C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				6C238AEA2865C5B70082A503 /* MessageViewController.swift */,
 				6C238AEE2865D2BD0082A503 /* CallViewController.swift */,
 				6C238AF22865D8100082A503 /* HomeTabViewController.swift */,
+				6C238B3B28672C4A0082A503 /* SettingViewController.swift */,
 			);
 			path = "view Controllers";
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				6CA8B51A28638AF400F6700C /* ViewController.swift in Sources */,
 				6CA8B51628638AF400F6700C /* AppDelegate.swift in Sources */,
 				6C238A692864DD750082A503 /* SignUpViewController.swift in Sources */,
+				6C238B3C28672C4B0082A503 /* SettingViewController.swift in Sources */,
 				6C238B1728660D8F0082A503 /* GeoLocation.swift in Sources */,
 				6C238A6C2864DD860082A503 /* LoginViewController.swift in Sources */,
 				6C238B1828660D8F0082A503 /* PoliceStation.swift in Sources */,

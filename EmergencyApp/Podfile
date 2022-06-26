@@ -6,6 +6,7 @@ target 'EmergencyApp' do
   use_frameworks!
 
   # Pods for EmergencyApp
+  pod 'Firebase'
   pod 'FirebaseAnalytics'
   pod 'FirebaseAuth'
   pod 'FirebaseMessaging'

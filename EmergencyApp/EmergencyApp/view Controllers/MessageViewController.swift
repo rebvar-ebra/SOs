@@ -19,21 +19,22 @@ class MessageViewController: UIViewController , MFMessageComposeViewControllerDe
 
     @IBOutlet weak var displaylbl: UILabel!
     @IBOutlet weak var sendMessageBtn: UIButton!
-    var counter = 0
+   /* var counter = 0
     var timer :Timer?
     let defaults = UserDefaults.standard
-    var person:[NSManagedObject] = []
+    var person:[NSManagedObject] = []*/
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        displaylbl.text = "Push the Button"
+        setUpElements()
+       /* displaylbl.text = "Push the Button"
         sendMessageBtn.addTarget(self, action: #selector(self.messageButtonClicked), for: .touchUpInside)
         person = getContactsFromStore()
 
-        setUpElememts()
+        setUpElememts()*/
     }
-    @objc private func messageButtonClicked() {
+   /* @objc private func messageButtonClicked() {
         
         if(defaults.bool(forKey: "vibrateOnMessage")){
             vibrate()
@@ -120,9 +121,17 @@ class MessageViewController: UIViewController , MFMessageComposeViewControllerDe
         //style
         
         
+     Utilities.styleMessageButton(sendMessageBtn)
+
         
-        Utilities.styleMessageButton(sendMessageBtn)
         
+    }*/
+    func setUpElements() {
+        // hide error lable
+        
+        //style Elements
+        
+        Utilities.styleFilledButton(sendMessageBtn)
         
     }
 

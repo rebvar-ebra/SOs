@@ -158,16 +158,23 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
-  - Alamofire (5.0.0-rc.2)
-  - AlamofireObjectMapper (6.2.0):
-    - Alamofire (= 5.0.0-rc.2)
-    - ObjectMapper (~> 3.5.1)
+  - Alamofire (4.5.1)
+  - AlamofireObjectMapper (5.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.3)
   - BoringSSL-GRPC (0.0.3):
     - BoringSSL-GRPC/Implementation (= 0.0.3)
     - BoringSSL-GRPC/Interface (= 0.0.3)
   - BoringSSL-GRPC/Implementation (0.0.3):
     - BoringSSL-GRPC/Interface (= 0.0.3)
   - BoringSSL-GRPC/Interface (0.0.3)
+  - Firebase (6.16.0):
+    - Firebase/Core (= 6.16.0)
+  - Firebase/Core (6.16.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.2.2)
+  - Firebase/CoreOnly (6.16.0):
+    - FirebaseCore (= 6.6.1)
   - FirebaseAnalytics (6.2.2):
     - FirebaseCore (~> 6.6)
     - FirebaseInstanceID (~> 4.3)
@@ -292,7 +299,9 @@ PODS:
   - Protobuf (3.21.1)
 
 DEPENDENCIES:
+  - Alamofire (= 4.5.1)
   - AlamofireObjectMapper
+  - Firebase
   - FirebaseAnalytics
   - FirebaseAuth
   - FirebaseDatabase
@@ -306,6 +315,7 @@ SPEC REPOS:
     - Alamofire
     - AlamofireObjectMapper
     - BoringSSL-GRPC
+    - Firebase
     - FirebaseAnalytics
     - FirebaseAnalyticsInterop
     - FirebaseAuth
@@ -334,9 +344,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
-  Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
-  AlamofireObjectMapper: 74d1440c92c42bbcc2b5f4dc81654ac095ec669f
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireObjectMapper: 3395e698901d8b0e6f48b7d0c43bd47875325102
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
+  Firebase: 497158b816d0a86fc31babbd05546fcd7e6083ff
   FirebaseAnalytics: cf95d3aab897612783020fbd98401d5366f135ee
   FirebaseAnalyticsInterop: 3f86269c38ae41f47afeb43ebf32a001f58fcdae
   FirebaseAuth: 5ce2b03a3d7fe56b7a6e4c5ec7ff1522890b1d6f
@@ -363,6 +374,6 @@ SPEC CHECKSUMS:
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Protobuf: 9e88c1e667d75aa2491d211f26ccddde4e8ad4cf
 
-PODFILE CHECKSUM: 099980155e302f36de947338099c37ad951eb7c2
+PODFILE CHECKSUM: c320334c2ace6c11ae15f2256ece27b088064efc
 
 COCOAPODS: 1.8.4

@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
 import FirebaseCore
 import FirebaseFirestore
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
+    
 
     @IBOutlet weak var firstNameTextField: UITextField!
     
@@ -40,10 +43,11 @@ class SignUpViewController: UIViewController {
     
     
     @IBOutlet weak var errorLable: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+            // Do any additional setup after loading the view.
         setUpElements()
     }
     
@@ -135,7 +139,12 @@ class SignUpViewController: UIViewController {
                 }
                else {
                 //user was created successfully,now store the firstname and last name
+                
+                
+            
                 let db = Firestore.firestore()
+                
+                    
                 
                 db.collection("users").addDocument(data: ["firstname":firstName,"lastname":lastName,"address":address,"birthplace":birthPlace,"bloodtype":bloodType,"medicalID":medicalId,"medications":medications,"phonenumber":phoneNumber,"sickness":sickness,"message":message,"uid" :result!.user.uid]) { (error) in
                     if error != nil {
@@ -143,12 +152,14 @@ class SignUpViewController: UIViewController {
                         self.showError("Error saving user data")
                     }
                 }
+                    
                 //transation to the Home screen
                 
                 self.transitionToHome()
                 
                 
                }
+                
             }
             
         }
