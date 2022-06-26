@@ -7,11 +7,12 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class CallViewController: UIViewController {
 
     
-    var docRef: DatabaseReference!
+   // var docRef: DatabaseReference!
     
     @IBOutlet weak var phoneNumberTextField: UITextField!
     
@@ -23,11 +24,12 @@ class CallViewController: UIViewController {
     
     
     @IBOutlet weak var errorLable: UILabel!
-    //var docRef: DatabaseReference!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //docRef = Firestore.firestore().document("users")
         setUpElememts()
     }
     

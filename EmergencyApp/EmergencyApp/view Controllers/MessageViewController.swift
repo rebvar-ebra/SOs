@@ -19,20 +19,20 @@ class MessageViewController: UIViewController , MFMessageComposeViewControllerDe
 
     @IBOutlet weak var displaylbl: UILabel!
     @IBOutlet weak var sendMessageBtn: UIButton!
-   /* var counter = 0
-    var timer :Timer?
-    let defaults = UserDefaults.standard
-    var person:[NSManagedObject] = []*/
+    //var counter = 0
+    //var timer :Timer?
+    //let defaults = UserDefaults.standard
+    //var person:[NSManagedObject] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setUpElements()
-       /* displaylbl.text = "Push the Button"
+      /* displaylbl.text = "Push the Button"
         sendMessageBtn.addTarget(self, action: #selector(self.messageButtonClicked), for: .touchUpInside)
-        person = getContactsFromStore()
+        person = getContactsFromStore()*/
 
-        setUpElememts()*/
+        
     }
    /* @objc private func messageButtonClicked() {
         
@@ -109,24 +109,11 @@ class MessageViewController: UIViewController , MFMessageComposeViewControllerDe
             print(fetchError)
         }
         return result
-    }
-    
-
-    
-    func setUpElememts(){
-        //hide the lable
-        
-        displaylbl.alpha=0
-        
-        //style
-        
-        
-     Utilities.styleMessageButton(sendMessageBtn)
-
-        
-        
     }*/
-    func setUpElements() {
+    
+
+    
+        func setUpElements() {
         // hide error lable
         
         //style Elements
